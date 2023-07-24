@@ -1,18 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-사용자 정의 데이터셋, DataLoader, Transforms 작성하기
+Writing Custom Datasets, DataLoaders and Transforms
 ===================================================
-**필자**: `Sasank Chilamkurthy <https://chsasank.github.io>`_
+**Author**: `Sasank Chilamkurthy <https://chsasank.github.io>`_
 
-데이터를 준비하는 머신 러닝의 문제점을 해결하기 위해 많은 노력이 들어갑니다.
-파이토치에서는 쉽고 효율적으로 데이터를 가져오고, 코드 자체의 가독성을
-높여주는 수많은 도구를 제공합니다. 이 튜토리얼에서 학습하기에는 부족한 데이터셋을
-가져오고 전처리 및 증가하는 방법을 확인할 수 있다.
+A lot of effort in solving any machine learning problem goes into
+preparing the data. PyTorch provides many tools to make data loading
+easy and hopefully, to make your code more readable. In this tutorial,
+we will see how to load and preprocess/augment data from a non trivial
+dataset.
 
-이 튜토리얼에 앞서 다음 패키지를 설치해야 합니다.
+To run this tutorial, please make sure the following packages are
+installed:
 
--  ``scikit-image``: 이미지 입출력(io)과 변형을 위해 사용됩니다.
--  ``pandas``: CSV 파일 파싱을 쉽게 해줍니다.
+-  ``scikit-image``: For image io and transforms
+-  ``pandas``: For easier csv parsing
 
 """
 
